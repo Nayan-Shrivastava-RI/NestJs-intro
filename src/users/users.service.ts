@@ -5,7 +5,7 @@ import { User } from './user.interface';
 import { CreateUserDto } from './dto/create-users.dto';
 
 @Injectable()
-export class usersService{
+export class UsersService{
 
     constructor(@InjectModel('User') private userModel : Model<User>){ }
 
