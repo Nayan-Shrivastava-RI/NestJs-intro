@@ -25,6 +25,8 @@ export class ProductsController {
     getProduct(@Param('id') prodId: string){
         return this.productsService.getSingleProduct(prodId);
     }
+
+    
     @Patch(':id')
     updateProduct(
         @Param('id') prodId: string,
